@@ -12,7 +12,10 @@ It further pulls in daily weather predictions using the [darksky](https://darksk
 
 `sudo apt get install jq`
 
-##usage
+Make sure you get a darksky API key. Enter your API token into darksky_api.py.
+
+## usage
+
 `bash stats.sh > /var/www/html/api/stats.json`
 
 in crontab:
