@@ -1,3 +1,7 @@
+#!/bin/bash
+#Set the working directory for the script to this one.
+cd "$(dirname "$0")"
+
 precision=2 #how many decimal places 
 units=1000000 #for W/V/A use 1000 for mW/mV/mA
 
