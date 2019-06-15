@@ -14,6 +14,8 @@ It further pulls in daily weather predictions using the [darksky](https://darksk
 
 Make sure you get a darksky API key. Enter your API token into darksky_api.py.
 
+Update the url request string in darksky.py with your location.
+
 ## usage
 
 `bash stats.sh > /var/www/html/api/stats.json`
