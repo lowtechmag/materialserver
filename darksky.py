@@ -8,6 +8,7 @@ forecast = 'forecast-{}'.format(date)
 forecast_old = 'forecast-{}'.format(yesterday)
 
 if not os.path.exists(forecast):
+    // The latitude / longitude numbers below (41.48325,2.31539) determine the location of the forecast 
     url = 'https://api.darksky.net/forecast/{}/41.48325,2.31539?exclude=minutely,hourly,flags,alerts&units=si'.format(token)
 
     response = requests.get(url)
