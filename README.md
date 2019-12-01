@@ -1,6 +1,9 @@
 # material server
-a bash script exposing `AXP209` device power metrics, temperature and machine load as a JSON API. 
-For Allwinner A20 ARM boards with the `AXP209` chipset that run [armbian](https://armbian.com)
+a set bash scripts exposing device power metrics, temperature and machine load as a JSON API.
+
+`axp_stats.sh` For Allwinner A20 ARM boards with the `AXP209` chipset that run [armbian](https://armbian.com)
+
+`ina219_stats.sh` For devices that use an external `INA219` measurement circuit connected over `I2C` and loaded via the `ina2xx` kernel module
 
 It further pulls in daily weather predictions using the [darksky](https://darksky.net) api.  
 
