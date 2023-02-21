@@ -45,7 +45,7 @@ bat="${bat_power}W|${bat_amp}Ah|${bat_volt}V|${bat_capacity}%|$bat_charging"
 
 time="`date +'%H:%M %Z'`"
 
-`python3 darksky.py`
+`python3 brightsky.py`
 today=(`date +"%F"`)
 weather=$( cat forecast-${today} )
 

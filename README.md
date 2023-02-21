@@ -5,23 +5,20 @@ a set bash scripts exposing device power metrics, temperature and machine load a
 
 `ina219_stats.sh` For devices that use an external `INA219` measurement circuit connected over `I2C` and loaded via the `ina2xx` kernel module
 
-It further pulls in daily weather predictions using the [darksky](https://darksky.net) api.  
+It further pulls in daily weather predictions using the [brightsky](https://brightsky.dev) API.  
 
 ## dependencies
 * `jq` > 1.5
-* a darksky account
 
 ### installation
 
 `sudo apt get install jq`
 
-Make sure you get a darksky API key. Enter your API token into darksky_api.py.
-
-Update the url request string in darksky.py with your location.
+Update the url request string in `brightsky.py` with your location and other parameters you might need. Have a look at the [brightsky documentation](https://brightsky.dev/docs/) for options.
 
 ## usage
 
-`bash stats.sh > /var/www/html/api/stats.json`
+`bash ina219_stats.sh > /var/www/html/api/stats.json`
 
 in crontab:
-`*/2 * * * * /bin/bash /folder/to/stats.sh > /var/www/html/api/stats.json`
+`*/2 * * * * /bin/bash /folder/to/ina219_stats.sh > /var/www/html/api/stats.json`

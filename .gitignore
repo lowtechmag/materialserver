@@ -1,5 +1,6 @@
 *
-!stats.sh
+!ina219_stats.sh
+!axp_stats.sh
 !README.md
 !.gitignore
-!darksky.py
+!brightsky.py

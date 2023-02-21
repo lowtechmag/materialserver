@@ -42,7 +42,7 @@ upt=${upt:3}
 time="`date +'%H:%M %Z'`"
 
 # Weather forecast
-`python3 darksky.py`
+`python3 brightsky.py`
 today=(`date +"%F"`)
 weather=$( cat forecast-${today} )
 
