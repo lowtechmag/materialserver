@@ -30,7 +30,7 @@ if not os.path.exists(forecast):
         url = "https://api.brightsky.dev/weather?date={}&last_date={}&lat=41.48325&lon=2.31539&source_id=4071&tz=Europe%2FMadrid&units=dwd".format(d+midday, d+midday_p1)
         response = requests.get(url)
         data.append(json.loads(response.text))
-        time.sleep(0.1)
+        sleep(0.1)
 
     
     today = data[0]['weather'][0]['condition']
@@ -45,7 +45,7 @@ if not os.path.exists(forecast):
 
     string = '{}|{}|{}|{}|{}|{}'.format(today,tomorrow,day_after_t, today_icon, tomorrow_icon, day_after_t_icon)
 
-    print(string)
+    #print(string)
     
     with open(forecast, 'w') as f:
 
